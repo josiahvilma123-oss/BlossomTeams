@@ -1,0 +1,28 @@
+name: BlossomTeams
+version: 1.0.0
+main: com.blossomsmp.teams.BlossomTeams
+api-version: '1.21'
+author: BlossomSMP
+description: Pink Blossom teams with a GUI, invites, team chat, team home, team bank and friendly fire.
+softdepend: [Vault, PlaceholderAPI, BlossomEconomy, BlossomCombat]
+
+commands:
+  team:
+    description: Open the team menu, or use /team help
+    aliases: [teams, clan]
+    usage: /team help
+  tc:
+    description: Talk in team chat (or toggle team chat on/off)
+    aliases: [teamchat]
+    usage: /tc [message]
+
+permissions:
+  blossomteams.admin:
+    description: /team admin (force disband, reload, spy)
+    default: op
+  blossomteams.spy:
+    description: Can turn on team chat spy with /team admin spy
+    default: op
+  blossomteams.bypasswarmup:
+    description: Team home teleports instantly
+    default: false

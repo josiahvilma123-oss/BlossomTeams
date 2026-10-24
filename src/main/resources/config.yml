@@ -1,0 +1,61 @@
+# ============================================
+#   ❀ BlossomTeams 1.0 - Blossom SMP ❀
+# ============================================
+# Colours: &a, &d, &l ... and hex colours like &#FF69B4
+# After editing, run: /team admin reload
+
+prefix: "&#FF69B4&l❀ &8» &r"
+
+teams:
+  # Most players allowed in one team (owner included).
+  # Keep this small on a ranked SMP so teams can't stack the top ranks.
+  max-members: 3
+  name-min-length: 3
+  name-max-length: 12
+  # Money it costs to make a team (uses BlossomEconomy). 0 = free
+  create-cost: 0
+  # Can teammates hurt each other when a team is made? (each team can change it)
+  default-friendly-fire: false
+  # How long an invite lasts
+  invite-expire-seconds: 120
+  # Tell the whole server when a new team is made
+  announce-new-teams: true
+  # true = normal members can invite too. false = only the owner and admins
+  members-can-invite: false
+  # Team names nobody can use
+  blocked-names: [admin, staff, owner, mod, moderator, blossom, server, console]
+
+home:
+  # Seconds to stand still before teleporting to the team home
+  warmup-seconds: 5
+  # Seconds between team home teleports
+  cooldown-seconds: 30
+  # Stop /team home while in combat (needs BlossomCombat)
+  block-in-combat: true
+
+chat:
+  # %role% = ♛ for the owner, ★ for admins
+  format: "&#FF1493&l[TEAM] &#FFB6C1%role%%player%&8: &#FFE4EC%message%"
+  spy-format: "&8[SPY] &#FF69B4%team% &7%player%&8: &7%message%"
+  # While team chat is ON, start a message with this to talk in normal chat instead
+  global-prefix: "!"
+
+# Tell teammates when someone from their team joins the server
+notify-teammate-join: true
+
+# Colours teams can pick in the menu: "Name;#HEX;ITEM"
+colors:
+  - "Pink;#FF69B4;PINK_DYE"
+  - "Hot Pink;#FF1493;MAGENTA_DYE"
+  - "Blossom;#FFB6C1;PINK_PETALS"
+  - "Lavender;#C8A2FF;PURPLE_DYE"
+  - "Red;#FF5555;RED_DYE"
+  - "Orange;#FFAA00;ORANGE_DYE"
+  - "Gold;#FFD700;YELLOW_DYE"
+  - "Mint;#7CFFB2;LIME_DYE"
+  - "Green;#3FBF3F;GREEN_DYE"
+  - "Aqua;#55FFFF;LIGHT_BLUE_DYE"
+  - "Blue;#5C7CFF;BLUE_DYE"
+  - "White;#FFFFFF;WHITE_DYE"
+  - "Gray;#AAAAAA;GRAY_DYE"
+  - "Black;#555555;BLACK_DYE"
